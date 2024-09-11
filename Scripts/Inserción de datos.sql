@@ -22,17 +22,18 @@ INSERT INTO payment (pay_method)
 VALUES
 ('Credit Card'),
 ('Debit Card'),
-('Cash');
+('Cash'),
+('No pay');
 
 INSERT INTO employees (name_, createdAt, updateAt, lastname, birthday, email,
- phone, address, occupation, date_recruitment, document, idtype_document)
+ phone, address, occupation, date_recruitment, document_number, idtype_document)
 VALUES
 ('Carlos', '2020-03-15','2020-03-15', 'Brown', '1987-03-15', 'carlos.brown@example.com', 
 '+1123456789', '789 Pine St', 'Developer', '2021-05-10', 151515, 1),
 ('Bibian','2021-04-15','2021-04-15', 'Taylor', '1990-07-25', 'bibian.taylor@example.com', 
 '+1098765432', '321 Oak St', 'Designer', '2022-06-20', 2222022, 2);
 
-INSERT INTO customers (name_, lastname, email, phone, birthday, document, idtype_document)
+INSERT INTO customers (name_, lastname, email, phone, birthday, document_number, idtype_document)
 VALUES
 ('Alice', 'Johnson', 'alice.johnson@example.com', '+123456789', '1988-02-14', 123456, 1),
 ('Bob', 'Williams', 'bob.williams@example.com', '+234567890', '1992-05-21', 234567, 2),
@@ -60,21 +61,21 @@ INSERT INTO reserves (state, time_, price, idpayment, date_reserve, idcustomers,
 VALUES
 ('Confirmed', '10:00 AM', '100.00',1, '2024-09-10', 1,1),
 ('Pending', '02:00 PM', '150.00',2, '2024-09-11', 2,1),
-('Cancelled', '11:00 AM', '200.00',3, '2024-09-12', 3,1),
+('Cancelled', '11:00 AM', '200.00',4, '2024-09-12', 3,1),
 ('Confirmed', '03:00 PM', '250.00',2, '2024-09-13', 4,2),
 ('Pending', '09:00 AM', '120.00',1, '2024-09-14', 5,2),
 ('Confirmed', '01:00 PM', '180.00',3, '2024-09-15', 1,1),
-('Cancelled', '04:00 PM', '220.00',2, '2024-09-16', 2,1),
+('Cancelled', '04:00 PM', '220.00',4, '2024-09-16', 2,1),
 ('Pending', '05:00 PM', '130.00',1, '2024-09-17', 3,2),
 ('Confirmed', '07:00 PM', '170.00',3, '2024-09-18', 4,2),
 ('Pending', '06:00 PM', '190.00',1, '2024-09-19', 5,2),
 ('Confirmed', '08:30 AM', '110.00', 1, '2024-09-20', 6, 1),
 ('Pending', '01:30 PM', '140.00', 2, '2024-09-21', 7, 1),
-('Cancelled', '12:00 PM', '160.00', 3, '2024-09-22', 8, 1),
+('Cancelled', '12:00 PM', '160.00', 4, '2024-09-22', 8, 1),
 ('Confirmed', '09:45 AM', '230.00', 2, '2024-09-23', 9, 2),
 ('Pending', '10:15 AM', '210.00', 1, '2024-09-24', 10, 2),
 ('Confirmed', '11:30 AM', '170.00', 3, '2024-09-25', 6, 1),
-('Cancelled', '02:45 PM', '240.00', 2, '2024-09-26', 7, 1),
+('Cancelled', '02:45 PM', '240.00', 4, '2024-09-26', 7, 1),
 ('Pending', '04:00 PM', '125.00', 1, '2024-09-27', 8, 2),
 ('Confirmed', '05:30 PM', '190.00', 3, '2024-09-28', 9, 2),
 ('Pending', '06:15 PM', '175.00', 1, '2024-09-29', 10, 2);
